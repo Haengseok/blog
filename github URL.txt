@@ -6,3 +6,12 @@ https://blog.naver.com/enfnql2/222257906952
 
 https://blog.naver.com/pplm1042/222201178226
 브랜치 충돌 (동빈나)
+
+https://blog.naver.com/convin305/222358803587
+git ignore, pull과 push
+
+https://blog.naver.com/bohwajung/222267781728
+pull 과 pull request
+
+https://blog.naver.com/yoonaazz/222264435097
+삭제 및 변경시
