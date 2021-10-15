@@ -1,0 +1,14 @@
+git branch		현재 브랜치
+git branch name		name이름의 브랜치 생성
+git checkout name		name이름의 브렌치로 이동
+git log			변경내용 로그
+git branch -d name	name이름의 브렌치 제거
+
+git remote add origin 주소
+git init  			깃 초기화
+git add .    		자료추가
+git cummit -m '내용'	커밋
+git push --set-upstream origin master
+
+다운받을때
+git clone 주소
