@@ -7,7 +7,7 @@ git branch -d name	name이름의 브렌치 제거
 git remote add origin 주소
 git init  			깃 초기화
 git add .    		자료추가
-git cummit -m '내용'	커밋
+git commit -m '내용'	커밋
 git push --set-upstream origin master
 
 다운받을때
