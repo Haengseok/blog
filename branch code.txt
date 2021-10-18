@@ -16,7 +16,10 @@ git init  				깃 초기화
 git add .    			자료추가
 git commit -m '내용'		커밋
 git commit -am '내용'		add와 내용 동시에 해줌
-git push --set-upstream origin master	푸시
+git push --set-upstream origin master	푸시		
 
 다운받을때
 git clone 주소
+
+git fetch 				수동으로 가져오기(pull처럼 병합하지않음)
+git merge 원격저장소별칭/브랜치이름
