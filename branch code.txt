@@ -2,13 +2,20 @@ git branch			현재 브랜치
 git branch name			name이름의 브랜치 생성
 git checkout name			name이름의 브렌치로 이동
 git log				변경내용 로그
+git log --pretty=short 		첫번째 줄의 커밋메세지만 로그
+git diff				워킹디렉터리 내용과 스테이지 내용 차이점표출
 git branch -d name		name이름의 브렌치 제거
 git push —force origin main		강제푸시 (덮어씀)
+git status				파일들의 스테이지 상태
+git rm --cached (파일이름)		스테이지 영역에서 삭제(add취소) [커밋하기전]
+git reset HEAD (파일이름)		커밋먼저한뒤 스테이지영역 삭제하면 커밋도 리셋해야함
+git checkout -- 수정파일이름		수정파일되돌리기(수정내역은 모두 삭제됨)
 
 git remote add origin 주소
 git init  				깃 초기화
 git add .    			자료추가
 git commit -m '내용'		커밋
+git commit -am '내용'		add와 내용 동시에 해줌
 git push --set-upstream origin master	푸시
 
 다운받을때
