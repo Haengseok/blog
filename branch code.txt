@@ -5,6 +5,8 @@ git log				변경내용 로그
 git log --pretty=short 		첫번째 줄의 커밋메세지만 로그
 git diff				워킹디렉터리 내용과 스테이지 내용 차이점표출
 git branch -d name		name이름의 브렌치 제거
+git branch -D name		강제제거
+git push origin --delete name	리모트브랜치 삭제
 git branch -v 			브렌치 자세히보여줌
 git push —force origin main		강제푸시 (덮어씀)
 git status				파일들의 스테이지 상태
@@ -13,15 +15,56 @@ git reset HEAD (파일이름)		커밋먼저한뒤 스테이지영역 삭제하�
 git checkout -- 수정파일이름		수정파일되돌리기(수정내역은 모두 삭제됨)
 git checkout - 			이전브렌치로 이동
 
+
 git remote add origin 주소
 git init  				깃 초기화
 git add .    			자료추가
 git commit -m '내용'		커밋
 git commit -am '내용'		add와 내용 동시에 해줌
-git push --set-upstream origin master	푸시		
+git push --set-upstream origin master	푸시	
+git push -u origin master 		선택한 브랜치를 원격서버로 전달한다.
+git push -u origin 브랜치이름	로컬브랜치를 원격 저장소에 등록
+git push origin 브랜치이름:뉴브랜치 	원격저장소에는 뉴브랜치 이름으로 등록됨
+
 
 다운받을때
 git clone 주소
 
+
 git fetch 				수동으로 가져오기(pull처럼 병합하지않음)
 git merge 원격저장소별칭/브랜치이름
+
+
+git checkout -b 이름		생성과 동시에 이동
+git branch -r 			리모트브랜치 목록 확인
+git branch -a 			모든브랜치 정보
+git branch -vv 			트래킹브랜치목록
+git checkout --track origin/브랜치 	복제된 저장소에서 업스트림만들기
+git checkout -b aaa origin/aaa	리모트브랜치 로컬저장소로 가져오기
+git branch -u origin/브랜치이름	기존브랜치를 업스트림직접설정
+
+git merge origin/브랜치이름		?
+
+
+임시처리
+git stash 				임시스택
+git stash save "메세지"		메시지추가가능 구분하기위해
+git stash list			스태시 목록 확인
+git stash pop			이전작업으로 돌아가기 삭제됨
+git stash apply 			이전작업으로 돌아가기 삭제안됨
+git stash branch test		스태시를 이용해 새로운 브랜치 생성가능
+git stash drop 			스태시 삭제
+
+
+병합
+git merge 브랜치이름		병합
+git merge 브랜치이름 --edit		이름설정가능
+git merge --abort 			병합 명령 취소(충돌시)
+git branch --merged 		병합한 브랜치 표시
+git branch --no-merged 		병합 안한 브랜치
+
+리베이스
+git rebase 브랜치이름		리베이스
+git rebase --continue		수정후 다시 리베이스진행
+git rebase -abort			리베이트취소
+git rebase -i HEAD~3		3개커밋을 하나의 커밋으로 합치기 가능
