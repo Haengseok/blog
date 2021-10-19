@@ -44,6 +44,7 @@ git checkout -b aaa origin/aaa	리모트브랜치 로컬저장소로 가져오�
 git branch -u origin/브랜치이름	기존브랜치를 업스트림직접설정
 
 git merge origin/브랜치이름		?
+git log --online			커밋로그
 
 
 임시처리
@@ -68,3 +69,22 @@ git rebase 브랜치이름		리베이스
 git rebase --continue		수정후 다시 리베이스진행
 git rebase -abort			리베이트취소
 git rebase -i HEAD~3		3개커밋을 하나의 커밋으로 합치기 가능
+
+복귀
+git reset --soft HEAD~		커밋만삭제
+git reset --mixed HEAD~		스테이지에서도 삭제
+git reset --hard HEAD~		워킹디렉토리 까지 완전히 삭제
+git revert HEAD			푸시취소
+git reset --merge HEAD~		병합커밋취소
+
+태그
+git tag -a 버전			Annotated태그(태그 정보까지)
+git tag -a 1.1.0 -m '태그설명~~'	''
+git tag -d 1.1.0			태그삭제
+git show 1.1.0			상세정보확인
+git tag 2.2.2			Lightweight 태그(태그이름만)
+git checkout -b 브랜치 태그이름	태그만으로는 커밋이 안돼서 태그이름으로 브랜치 생성
+git push 태그이름			태그푸시
+git push origin --tags		태그 모두 푸시
+git push --delete origin 태그이름	푸시한 태그 삭제
+git tag -d 2.0.0			로컬태그삭제
