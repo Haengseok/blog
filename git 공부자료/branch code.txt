@@ -6,7 +6,6 @@ git log --pretty=short 		첫번째 줄의 커밋메세지만 로그
 git diff				워킹디렉터리 내용과 스테이지 내용 차이점표출
 git branch -d name		name이름의 브렌치 제거
 git branch -D name		강제제거
-git push origin --delete name	리모트브랜치 삭제
 git branch -v 			브렌치 자세히보여줌
 git push —force origin main		강제푸시 (덮어씀)
 git status				파일들의 스테이지 상태
@@ -25,6 +24,7 @@ git push --set-upstream origin master	푸시
 git push -u origin master 		선택한 브랜치를 원격서버로 전달한다.
 git push -u origin 브랜치이름	로컬브랜치를 원격 저장소에 등록
 git push origin 브랜치이름:뉴브랜치 	원격저장소에는 뉴브랜치 이름으로 등록됨
+git push origin --delete name	리모트브랜치 삭제
 
 
 다운받을때
