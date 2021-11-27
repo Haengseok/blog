@@ -8,3 +8,5 @@ https://aorica.tistory.com/52
 192.168.1.111
 
 https://www.npmjs.com/package/ftp
+
+net start w32time
