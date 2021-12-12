@@ -1,7 +1,0 @@
-tag_id,seat_no,company_nm,dept_nm,clsf_nm,resve_de,resve_begin_time,resve_end_time,date,phonenum,layout,mtgrum_nm,mtgrum_eng_nm,ofcps_nm,user_nm,logoImg,status,mtg_sj1,mtg_sj2,mtg_sj3,mtg_user1,mtg_user2,mtg_user3,mtg_tel1,mtg_tel2,mtg_tel3,mtg_tm1,mtg_tm2,mtg_tm3,mtg_qr,mtg_col1,mtg_col2,mtg_col3
-,20027,,세 종 지 사,,,,,,,E,,,,노 승 욱,,,,,,,,,,,,,,,www.atec.com,,,
-,21111,,세 종 지 사,,,,,,,E,,,,김 상 수,,,,,,,,,,,,,,,www.atec.com,,,
-,21112,,세 종 지 사,,,,,,,E,,,,어    용,,,,,,,,,,,,,,,www.atec.com,,,
-,21113,,세 종 지 사,연구원,,,,,,K,,,,조 연 주,,,,,,,,,,,,,,,www.atec.com,,,
-,M0701,,세 종 지 사,,,,,,,D,7층세종지사(대회의실),,,어    용,,사용중,주간경영회의,2번째 회의,3번째 회의,홍길동/기획,오징어/마케팅,박주연/연구소,044-1234-5678,044-2222-2222,044-3333-3333,10:00 11:00,11:00 12:00,13:00 14:00,www.atec.com,,,
-,R0702,,세 종 지 사,,,,,,,E,7층(컨퍼런스실),,,어    용,,사용중,주간경영회의,2번째 회의,3번째 회의,홍길동/기획,오징어/마케팅,박주연/연구소,044-1234-5678,044-2222-2222,044-3333-3333,10:00 11:00,11:00 12:00,13:00 14:00,www.atec.com,,,
