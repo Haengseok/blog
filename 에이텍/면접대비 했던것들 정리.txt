@@ -1,0 +1,10 @@
+Node.js
+
+mysql 서버 연동(fs, express, cors, mysql, app)
+get, post 등 사용해서 sql 문을 이용해서 db와 연동
+csv파일 생성 및 및 ftp 연결작업.
+크롤링해서 가져오기
+이메일 인증번호 보내기 및 확인작업.
+
+React
+사이드 바 
